@@ -1,0 +1,275 @@
+.bla{
+    background-color: rgb(66, 66, 66);
+
+   
+}
+.texts{
+    position: absolute;
+    top: 130px;
+    color: whitesmoke;
+    left: 110px;
+    font-size: 30px;
+    font-family: 'Baloo Tammudu 2';
+}
+.tri2{
+    position: absolute;
+    left: 290px;
+    top:267px;
+    width:0;
+    height: 0;
+    border-left: 25px solid transparent;
+	border-right: 1px solid transparent;
+    border-bottom: 50px solid white;
+    transform: rotateZ(180deg);
+
+}
+.tri{
+    position: absolute;
+    left: 270px;
+    top: 235px;
+    width:0;
+    height: 0;
+    border-left: 25px solid transparent;
+	border-right: 1px solid transparent;
+	border-bottom: 50px solid white;
+}
+.bar{
+
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    width: 580px;
+    height: 160px;
+    
+    background-color: #ececec;
+    
+    border-color: black;
+
+    
+
+    border-radius: 40px;
+    box-shadow: 4px 10px 10px;
+    
+}
+.cell-end{
+    position: absolute;
+    top: 240px;
+    left: 590px;
+
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+
+    
+
+    width: 30px;
+    height: 80px;
+    background-color: rgb(0, 174, 255);
+    box-shadow: 4px 10px 10px;
+}
+
+.loader{
+    position: absolute;
+    background-color: rgb(34, 194, 87);
+    top: 200px;
+    left: 10px;
+
+    border-radius: 40px;
+
+    width: 580px;
+    height:160px;
+
+    animation: loading 4s linear  ;
+    animation-delay: 1s;
+}
+
+@keyframes  loading{
+0% {
+    width: 30px;
+    background-color: rgb(255, 0, 0); 
+}
+
+50%{
+    width: 300px;
+    background-color: yellow;
+}
+to{
+    width: 580px;
+    background-color: rgb(34, 194, 87);
+}
+
+}
+
+
+
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 400px;
+    height: 240px;
+    overflow: hidden;
+    
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    
+}
+ul li{
+    list-style: none;
+    border-radius: 700%;
+    border: 15px solid #000000;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-bottom-color: transparent !important;
+    border-left-color: transparent !important;
+    box-shadow:  0 0 10px rgba(0,0,0.2);
+    animation: animate 5s infinite alternate;
+    transform: translate(-50%,-50%);
+    
+ 
+}
+
+ul li:nth-child(1)
+{
+    width: 100px;
+    height: 100px;
+    border-color: #FF0000;
+    animation-delay: 0s;
+}
+
+ul li:nth-child(2)
+{
+    width: 130px;
+    height: 130px;
+    border-color: #FF7F00;
+    animation-delay: 0.3s;
+}
+
+ul li:nth-child(3)
+{
+    width: 160px;
+    height:160px;
+    border-color: #FFFF00;
+    animation-delay: 0.6s;
+}
+
+
+ul li:nth-child(4)
+{
+    width: 190px;
+    height: 190px;
+    border-color: #00FF00;
+    animation-delay: 0.9s ;
+}
+
+
+ul li:nth-child(5)
+{
+    width: 220px;
+    height: 220px;
+    border-color: #0000FF;
+    animation-delay: 1.2s ;
+}
+
+ul li:nth-child(6)
+{
+    width: 250px;
+    height: 250px;
+    border-color: #4B0082;
+    animation-delay: 1.5s ;
+}
+
+ul li:nth-child(7)
+{
+    width: 280px;
+    height: 280px;
+    border-color: #9400D3;
+    animation-delay: 1.9s ;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-50%, -50%) rotate(-45deg);
+        
+    }
+
+    100%{
+        transform: translate(-50%, -50%)  rotate(315deg);
+        
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pop-up-cntnr:hover{
+    box-shadow: 14px 14px 10px rgb(31, 30, 30);
+
+}
+.pop-up-cntnr{
+    top: -400px;
+    animation: drop 0.7s ease forwards ;
+    
+}
+@keyframes drop{
+    0%{ opacity: 0; }
+    70%{ transform: translateY(680px)}
+    100%{ transform:translateY(630px); opacity: 1;}
+}
+
+.input-field{
+    border-color: rgb(54, 54, 54);
+    height: 35px;
+    border-radius: 5px;
+    font-family: 'Ubuntu';
+    width: 70%;
+}
+
+.submit{
+    height:31px;
+    border-color: rgb(54, 54, 54);
+    background-color:rgb(49, 49, 49); 
+    color: rgb(219, 219, 219);
+    border-radius:5px;
+}
+.btn{
+    height: 70%;
+}
+
+
+p{
+    font-family: 'Baloo Tammudu 2';
+}
+h1{
+    font-family: 'Ubuntu';
+}
+
